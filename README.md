@@ -277,12 +277,7 @@ The AI never skips phases. It never combines multiple repair steps. Each step re
 - [ ] AR-style overlay anchoring to detected components
 - [ ] IoT sensor data integration for predictive diagnostics
 
-## Team
 
-| | Name | Focus |
-|---|------|-------|
-| **Y** | **Yugandhar** | Architecture, frontend, integration, demo |
-| **N** | **Nithin** | Backend, RAG knowledge base, document ingestion |
 
 ## License
 
