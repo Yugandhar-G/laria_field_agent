@@ -1,0 +1,44 @@
+---
+description: Always send function responses back to Gemini after handling tool calls
+globs: "**/*.{ts,tsx}"
+alwaysApply: false
+---
+
+When handling Gemini function calls, you MUST send a function response back via the WebSocket.
+
+Tool calls arrive as TOP-LEVEL `toolCall` messages (not inside serverContent.modelTurn.parts).
+
+Two response strategies based on tool type:
+
+**UI-only tools** (show_overlay, clear_overlays, advance_step) — use SILENT scheduling to prevent double-speech:
+```json
+{
+  "toolResponse": {
+    "functionResponses": [{
+      "id": "<call.id>",
+      "name": "<call.name>",
+      "response": { "success": true },
+      "scheduling": "SILENT"
+    }]
+  }
+}
+```
+
+**State-feedback tools** (show_diagnosis, generate_report, complete_procedure) — normal response:
+```json
+{
+  "toolResponse": {
+    "functionResponses": [{
+      "id": "<call.id>",
+      "name": "<call.name>",
+      "response": { "success": true }
+    }]
+  }
+}
+```
+
+Also handle `toolCallCancellation` messages — these arrive when the user interrupts during a tool call. Remove the cancelled call IDs from pending state.
+
+DEDUPLICATION: Track processed call IDs. Skip duplicate IDs and duplicate tool names within the same batch.
+
+Forgetting to send the function response breaks Gemini's conversation loop. This applies to EVERY function call.

@@ -1,0 +1,32 @@
+---
+description: Require JSDoc/docstring header on every file
+globs: "**/*.{ts,tsx,py}"
+alwaysApply: false
+---
+
+Every file must start with a JSDoc block (TypeScript) or docstring (Python) containing:
+
+1. What this file does (one sentence)
+2. What it depends on (imports from other project files)
+3. What depends on it (which files import from this one)
+4. Key inputs and outputs
+
+Example for TypeScript:
+```typescript
+/**
+ * Manages the WebSocket connection to Gemini Live API.
+ *
+ * Depends on: @/types (ConnectionState, GeminiFunctionCall)
+ * Used by: hooks/use-session.ts
+ */
+```
+
+Example for Python:
+```python
+"""
+Knowledge base retrieval service. Scores chunks by keyword overlap.
+
+Depends on: app/config.py (settings)
+Used by: app/routes/knowledge.py
+"""
+```

@@ -1,0 +1,16 @@
+---
+description: No TODOs, no placeholders — implement everything fully
+globs:
+alwaysApply: true
+---
+
+Every function must be FULLY implemented.
+
+- No `// TODO: implement this` comments
+- No placeholder returns like `return null` or `return {}`
+- No `// ... rest of the code` ellipsis
+- No `// implement later` annotations
+
+If a dependency file doesn't exist yet, import it anyway and note the dependency in the file header JSDoc. The file should be ready to work the moment its dependency is created.
+
+When creating files, write the COMPLETE file content. Every function must have its full logic, error handling, and cleanup.

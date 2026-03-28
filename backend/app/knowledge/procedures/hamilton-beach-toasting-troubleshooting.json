@@ -1,0 +1,83 @@
+{
+  "id": "hamilton-beach-toasting-troubleshooting",
+  "equipment": {
+    "type": "toaster",
+    "models": ["Hamilton Beach (India market)", "840231800 series"],
+    "identifiers": ["shade selector dial", "programming buttons", "bread lifter", "extra-wide or standard slots per model"]
+  },
+  "symptom": "Uneven browning, wrong toast shade, or English muffin issues (Hamilton Beach tips)",
+  "difficulty": "beginner",
+  "estimated_time_minutes": 10,
+  "tools_required": [],
+  "safety": {
+    "preconditions": [
+      "Toaster plugged in only during active toasting",
+      "Do not operate unattended; unplug after use"
+    ],
+    "hazards": [
+      "Fire if unattended or wrong foods used (no toaster pastries in slot — use toaster oven per manual)"
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "action": "Remember: bread lifter will not latch down unless the toaster is plugged in",
+      "what_to_look_for": "User expects lever to stay down — if unplugged, lever will not latch",
+      "visual_confirmation": "Plug connected if user wants to toast",
+      "overlay": {
+        "position": "center-left",
+        "type": "info",
+        "label": "Plug in to latch"
+      }
+    },
+    {
+      "order": 2,
+      "action": "Adjust shade for bread temperature: room-temperature bread often toasts medium on settings 2–4; refrigerated bread may need a darker setting",
+      "what_to_look_for": "User describes toast too light — ask if bread was cold from fridge",
+      "visual_confirmation": "Shade dial moved appropriately after explanation",
+      "overlay": {
+        "position": "center",
+        "type": "step",
+        "label": "Shade dial"
+      }
+    },
+    {
+      "order": 3,
+      "action": "For English muffins: irregular surface may need more than one cycle; after one cycle on highest, lower shade for second cycle if darker needed — watch to avoid overbrowning",
+      "what_to_look_for": "Muffin uneven or underdone on first cycle",
+      "visual_confirmation": "Second short cycle with user watching browning",
+      "overlay": {
+        "position": "top-center",
+        "type": "step",
+        "label": "Second cycle"
+      },
+      "if_issue_found": "English muffins cut with a knife toast more evenly than those split with a fork (manual)"
+    },
+    {
+      "order": 4,
+      "action": "When toasting a single slice, bread may be placed in any slot; expect possible side-to-side color variation — this is normal",
+      "what_to_look_for": "User has one slice and worries about uneven color",
+      "visual_confirmation": "User accepts variation or rotates slice for second pass if needed",
+      "overlay": {
+        "position": "center",
+        "type": "info",
+        "label": "Single-slice note"
+      }
+    },
+    {
+      "order": 5,
+      "action": "Use STOP button to stop a cycle at any time, then unplug when done",
+      "what_to_look_for": "User needs to cancel mid-cycle",
+      "visual_confirmation": "Toasting stops; unit unplugged after use",
+      "overlay": {
+        "position": "center-right",
+        "type": "warning",
+        "label": "STOP then unplug"
+      }
+    }
+  ],
+  "sources": [
+    "Hamilton Beach Use and Care Guide 840231800 — Tips and Troubleshooting / Toasting Chart",
+    "app/knowledge/sources/840231800.pdf"
+  ]
+}

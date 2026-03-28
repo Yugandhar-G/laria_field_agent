@@ -1,0 +1,12 @@
+---
+description: Read project specs before writing any code
+globs:
+alwaysApply: true
+---
+
+Before writing ANY code:
+
+1. Read `/CLAUDE.md` for architecture decisions, tech stack, and critical rules.
+2. Read the relevant `/skills/SKILL-*.md` file for the exact specification of the module you are building.
+
+The skill file IS the specification. It defines exact function signatures, exact types, exact file paths, and exact behavior. Do not deviate from it. Do not guess what a function should do if the skill file specifies it.

@@ -1,0 +1,16 @@
+---
+description: Mobile-first design constraints for field use
+globs: "**/*.{tsx,css}"
+alwaysApply: false
+---
+
+The primary device is a phone held by a technician on a job site.
+
+- Camera must default to rear-facing: `facingMode: "environment"`
+- Touch targets minimum 44x44px (WCAG 2.5.5)
+- Font minimum 16px body text
+- Use `100dvh` not `100vh` for full viewport height (handles mobile browser chrome)
+- Test with Chrome DevTools mobile emulator before considering done
+- No hover-only interactions — everything must work with touch
+- Prefer bottom-anchored controls (thumb-friendly zone)
+- Disable user-select and text zoom on the main session view

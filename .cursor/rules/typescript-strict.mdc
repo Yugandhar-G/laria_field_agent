@@ -1,0 +1,16 @@
+---
+description: Enforce TypeScript strict mode conventions
+globs: "**/*.{ts,tsx}"
+alwaysApply: false
+---
+
+TypeScript strict mode is enforced. Follow these rules in ALL TypeScript files:
+
+- No `any` types. Define explicit interfaces for all data structures.
+- No `@ts-ignore` or `@ts-expect-error` directives.
+- No `as unknown as T` casts. If you need a cast, the types are wrong — fix the types.
+- Use discriminated unions for state machines (e.g., ConnectionState).
+- Use `interface` for object shapes, `type` for unions and primitives.
+- ALL shared types live in `src/types/index.ts`. No inline type definitions in component files.
+- Export everything with named exports. No default exports except React components (shadcn convention).
+- Use `noUncheckedIndexedAccess` — always handle potential `undefined` from array/object access.

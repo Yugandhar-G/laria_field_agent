@@ -1,0 +1,130 @@
+[
+  {
+    "text": "Toaster not heating: First check the power cord and outlet. Unplug the toaster and inspect the cord for fraying, kinks, or heat damage at the plug and where it enters the body. Test the outlet with another device. If power is confirmed, the issue is likely an open heating element (nichrome wire break), blown thermal fuse, or failed solenoid/electromagnet circuit.",
+    "metadata": {
+      "source": "toaster_troubleshooting",
+      "type": "troubleshooting",
+      "equipment": "toaster"
+    }
+  },
+  {
+    "text": "Toaster uneven toasting: If only one side toasts, one of the two heating elements has failed. In most 2-slice toasters, each slot has two elements (one on each side). Use a multimeter on continuity mode to test each element. Also check if the reflector panel is bent or tarnished — a dirty/warped reflector redirects heat unevenly. Clean reflectors with a dry cloth (never liquid). Bread guide misalignment can also push bread closer to one element.",
+    "metadata": {
+      "source": "toaster_troubleshooting",
+      "type": "troubleshooting",
+      "equipment": "toaster"
+    }
+  },
+  {
+    "text": "Toaster lever won't stay down: The lever mechanism uses an electromagnet powered through the heating circuit. If the thermal fuse is blown, the electromagnet gets no power and the lever won't latch. Test the thermal fuse for continuity — it's a one-shot device and must be replaced (not reset). Other causes: crumb buildup jamming the mechanism, broken latch spring, or corroded contact points on the lever switch.",
+    "metadata": {
+      "source": "toaster_troubleshooting",
+      "type": "troubleshooting",
+      "equipment": "toaster"
+    }
+  },
+  {
+    "text": "Toaster burning smell: Most common cause is a full crumb tray. Accumulated crumbs can smolder and are a fire hazard — remove and clean immediately. Other causes: insulation degradation on internal wiring (replace the toaster), overheating due to a stuck thermostat (bimetallic strip not tripping), or foreign object inside the slot.",
+    "metadata": {
+      "source": "toaster_troubleshooting",
+      "type": "troubleshooting",
+      "equipment": "toaster"
+    }
+  },
+  {
+    "text": "Toaster tripping breaker: This indicates a short circuit or ground fault. Unplug immediately. Common causes: damaged power cord with exposed conductors, internal wiring touching the metal chassis (ground fault), or a failed heating element shorting to ground. Do NOT continue using — replace or have inspected by qualified person.",
+    "metadata": {
+      "source": "toaster_troubleshooting",
+      "type": "troubleshooting",
+      "equipment": "toaster"
+    }
+  },
+  {
+    "text": "Toaster internal components: Heating elements are nichrome (nickel-chromium alloy) wire coiled on mica sheets. Thermostat uses a bimetallic strip that bends with heat to control darkness. Timer circuit (on electronic models) replaces the bimetallic strip. Solenoid/electromagnet holds the lever down during toasting cycle. Thermal fuse (one-shot, typically 240°F/115°C) protects against overheating. Crumb tray at the bottom collects debris. Power cord should be a grounded 3-prong type on newer models.",
+    "metadata": {
+      "source": "toaster_reference",
+      "type": "reference",
+      "equipment": "toaster"
+    }
+  },
+  {
+    "text": "CRAC unit high supply air temperature: Check refrigerant charge level using the sight glass on the liquid line — bubbles indicate low charge (requires EPA-certified technician for refrigerant handling). Inspect condenser coils for dirt, debris, or blocked airflow — clean with coil cleaner and low-pressure water. Verify condenser fan operation (motor, belt, blade condition). Check evaporator coil for ice formation (indicates low refrigerant or restricted airflow). Verify compressor is running and amp draw is within nameplate specs.",
+    "metadata": {
+      "source": "crac_troubleshooting",
+      "type": "troubleshooting",
+      "equipment": "crac"
+    }
+  },
+  {
+    "text": "CRAC unit low airflow: Primary cause is clogged air filters — CRAC filters should be replaced (not cleaned) every 3-6 months. Check belt drive (belt tension, wear cracks, alignment) if applicable. Listen for blower motor bearing noise (grinding = imminent failure). Verify blower wheel is not loose on shaft. Check for ductwork obstructions or collapsed raised floor tiles. Measure static pressure differential across the filter rack — over 0.5 inches WC indicates replacement needed.",
+    "metadata": {
+      "source": "crac_troubleshooting",
+      "type": "troubleshooting",
+      "equipment": "crac"
+    }
+  },
+  {
+    "text": "CRAC unit humidity issues: High humidity — check if the dehumidification coil is functioning (should condense moisture from air). Verify condensate drain is not blocked. Low humidity — inspect the humidifier cylinder for mineral scale buildup. Infrared humidifier cylinders are consumable items (replace every 6-12 months). Verify humidifier water supply valve is open and water is flowing. Check humidity sensor accuracy with a calibrated reference instrument — drift over ±3% RH requires recalibration or replacement.",
+    "metadata": {
+      "source": "crac_troubleshooting",
+      "type": "troubleshooting",
+      "equipment": "crac"
+    }
+  },
+  {
+    "text": "CRAC unit compressor short-cycling: Compressor starts and stops rapidly (less than 5 minutes between cycles). Causes: low refrigerant charge causing low suction pressure cutout, dirty condenser causing high head pressure cutout, thermostat differential set too narrow (should be minimum 2°F/1°C), faulty pressure switches, or oversized unit for the load. Never bypass pressure safety switches — diagnose the root cause.",
+    "metadata": {
+      "source": "crac_troubleshooting",
+      "type": "troubleshooting",
+      "equipment": "crac"
+    }
+  },
+  {
+    "text": "CRAC unit internal components: Compressor (scroll or reciprocating, 208/460V 3-phase), condenser coil (air-cooled or glycol-cooled), evaporator coil (DX or chilled water), expansion valve (TXV or EEV), air filters (MERV 8-13), blower assembly (forward-curved centrifugal, direct or belt drive), humidifier (infrared cylinder or steam), control board (microprocessor with display panel), reheat coils (electric or hot water/steam), condensate pump and drain. Refrigerant types: R-410A (current), R-407C (older), R-22 (legacy, being phased out).",
+    "metadata": {
+      "source": "crac_reference",
+      "type": "reference",
+      "equipment": "crac"
+    }
+  },
+  {
+    "text": "ASHRAE TC 9.9 data center environmental guidelines (2021 update): Class A1 (recommended) — temperature 18-27°C (64.4-80.6°F) at server inlet, relative humidity 20-80% non-condensing, dew point maximum 17°C. Class A2 (allowable) — temperature 10-35°C, humidity 20-80%. Maximum temperature rate of change: 5°C per hour. Maintain positive pressure in cold aisles. Hot aisle/cold aisle containment improves efficiency by 15-30%. Monitor rack-level temperatures, not just return air.",
+    "metadata": {
+      "source": "ashrae_standards",
+      "type": "standards",
+      "equipment": "data_center"
+    }
+  },
+  {
+    "text": "Electrical safety — Lockout/Tagout (LOTO): Before any electrical work, follow LOTO procedures per OSHA 29 CFR 1910.147. Steps: (1) Notify affected personnel, (2) Identify all energy sources, (3) Shut down equipment using normal procedures, (4) Apply lockout/tagout devices to each energy isolation point, (5) Verify zero energy state with a tested meter, (6) Perform the work, (7) Remove LOTO devices only after verifying all personnel are clear. Never work on energized equipment above 50V without arc flash PPE per NFPA 70E.",
+    "metadata": {
+      "source": "electrical_safety",
+      "type": "safety",
+      "equipment": "general"
+    }
+  },
+  {
+    "text": "Multimeter usage for equipment diagnostics: Always start with the highest range and work down. For continuity testing: set to continuity/ohms mode, touch probes together to verify (should beep/read 0 ohms), then test across the component with power OFF. For voltage testing: set to appropriate AC or DC mode, test at the outlet or terminal block. Expected readings: US residential 120V ±5%, commercial 208/480V 3-phase. For amp draw: use a clamp meter around a single conductor (not the cord). Compare readings to nameplate FLA (Full Load Amps).",
+    "metadata": {
+      "source": "electrical_safety",
+      "type": "reference",
+      "equipment": "general"
+    }
+  },
+  {
+    "text": "UPS battery diagnostics: Check individual cell voltages — a healthy 12V VRLA cell should read 13.5-13.8V on float charge. Any cell below 12.0V indicates failure. Look for swollen or leaking battery cases — replace the entire string if one cell fails. Verify charger output voltage and current. Battery runtime decreases as batteries age — expect 3-5 year lifespan for VRLA cells. Temperature affects battery life significantly: every 10°C above 25°C halves battery life. Never mix old and new batteries in the same string.",
+    "metadata": {
+      "source": "ups_reference",
+      "type": "troubleshooting",
+      "equipment": "ups"
+    }
+  },
+  {
+    "text": "CRAC water leak diagnostics: Common sources: condensate drain pan overflow (blocked drain line or failed condensate pump), humidifier overflow (stuck fill valve or failed float switch), glycol piping connection leak (check fittings for glycol residue), chilled water valve leak. Trace the water to its source — use a flashlight and paper towels. For condensate: clear the drain line with compressed air or a wet/dry vacuum. For glycol: tighten fittings and check for corrosion. Report any refrigerant-related leaks to a certified technician.",
+    "metadata": {
+      "source": "crac_troubleshooting",
+      "type": "troubleshooting",
+      "equipment": "crac"
+    }
+  }
+]

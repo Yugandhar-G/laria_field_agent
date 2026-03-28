@@ -1,0 +1,103 @@
+{
+  "id": "wirecutter-clean-toaster-properly",
+  "equipment": {
+    "type": "toaster",
+    "models": ["generic 2-slice", "generic 4-slice", "stainless steel models"],
+    "identifiers": ["crumb tray", "bread slots", "heating elements visible from slots"]
+  },
+  "symptom": "Deep clean a toaster without damaging heating elements (NYT Wirecutter method)",
+  "difficulty": "beginner",
+  "estimated_time_minutes": 15,
+  "tools_required": [
+    "soft pastry brush",
+    "long thin paintbrush",
+    "dish cloths or paper towels",
+    "sponge",
+    "dish soap",
+    "Bar Keepers Friend (optional, for stainless steel exterior only)"
+  ],
+  "safety": {
+    "preconditions": [
+      "Unplug the toaster before cleaning",
+      "Do not turn upside down and shake vigorously — can damage delicate heating elements"
+    ],
+    "hazards": [
+      "Water in slots, levers, or buttons can cause electric shock or short if plugged in wet",
+      "Never stick sharp objects into the toaster"
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "action": "Unplug the toaster and let it cool completely",
+      "what_to_look_for": "No power to unit; cool exterior",
+      "visual_confirmation": "Plug removed from outlet",
+      "overlay": {
+        "position": "bottom-right",
+        "type": "warning",
+        "label": "Unplug first"
+      }
+    },
+    {
+      "order": 2,
+      "action": "Use pastry brush and long thin paintbrush to gently brush crumbs from heating elements toward the bottom — do not shake the toaster upside down as primary method",
+      "what_to_look_for": "Crumbs dislodged with soft bristles only; no metal tools",
+      "visual_confirmation": "Visible crumb reduction in slot area",
+      "overlay": {
+        "position": "top-center",
+        "type": "step",
+        "label": "Brush elements gently"
+      },
+      "safety_note": "Wirecutter: avoid shaking as main method — elements are delicate"
+    },
+    {
+      "order": 3,
+      "action": "Remove crumb tray and empty into trash; wipe tray with damp paper towel or cloth; dry fully before reinserting",
+      "what_to_look_for": "Tray clean and bone-dry",
+      "visual_confirmation": "Tray slides back in without moisture",
+      "overlay": {
+        "position": "bottom-center",
+        "type": "step",
+        "label": "Clean dry tray"
+      }
+    },
+    {
+      "order": 4,
+      "action": "Wipe outside with damp towel; for stubborn stains use a little dish soap on sponge — keep water out of slots, levers, and buttons",
+      "what_to_look_for": "No liquid dripping into openings",
+      "visual_confirmation": "Exterior clean; no water pooled near controls",
+      "overlay": {
+        "position": "center",
+        "type": "warning",
+        "label": "Keep water out"
+      }
+    },
+    {
+      "order": 5,
+      "action": "Dry the toaster thoroughly with a towel",
+      "what_to_look_for": "All surfaces dry, especially around slots",
+      "visual_confirmation": "No dampness before storage or next use",
+      "overlay": {
+        "position": "center",
+        "type": "info",
+        "label": "Dry completely"
+      }
+    },
+    {
+      "order": 6,
+      "action": "If exterior is stainless steel, polish with Bar Keepers Friend per product instructions (exterior only)",
+      "what_to_look_for": "Stainless finish; test small area first",
+      "visual_confirmation": "Even polish without residue entering slots",
+      "overlay": {
+        "position": "center-right",
+        "type": "step",
+        "label": "SS polish only outside"
+      },
+      "if_issue_found": "Skip if not stainless or if user unsure — cosmetic only"
+    }
+  ],
+  "sources": [
+    "NYT Wirecutter — How to Clean A Toaster (YouTube lpNJUgBSvn0)",
+    "app/knowledge/sources/wirecutter-clean-toaster-nyt.txt"
+  ]
+}

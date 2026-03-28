@@ -1,0 +1,89 @@
+{
+  "id": "hamilton-beach-safe-use-and-cleaning",
+  "equipment": {
+    "type": "toaster",
+    "models": ["Hamilton Beach (India market)", "840231800 series"],
+    "identifiers": ["slide-out crumb tray", "shade selector dial", "bread lifter", "programming buttons", "dust cover", "Hamilton Beach branding"]
+  },
+  "symptom": "Safe operation, cleaning, and removing stuck food (Hamilton Beach toaster manual)",
+  "difficulty": "beginner",
+  "estimated_time_minutes": 20,
+  "tools_required": ["soft cloth or paper towels", "non-metal brush optional"],
+  "safety": {
+    "preconditions": [
+      "Always unplug the toaster when not in use and before cleaning",
+      "Allow the toaster to cool before cleaning or moving it",
+      "Do not use metal scouring pads — pieces can touch electrical parts"
+    ],
+    "hazards": [
+      "Fire if crumb tray is not cleaned regularly",
+      "Electric shock if water or metal pad fragments contact live parts",
+      "Damage to heating elements if fork or sharp tool is inserted in slots"
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "action": "Confirm the toaster is unplugged before any cleaning or when finished using it",
+      "what_to_look_for": "Power plug removed from the outlet; bread lifter in the up position before unplugging per manual",
+      "visual_confirmation": "Cord plug is in hand or outlet is visibly empty",
+      "overlay": {
+        "position": "bottom-right",
+        "type": "warning",
+        "label": "Unplug first"
+      },
+      "safety_note": "Manual: Before unplugging, ensure bread lifter is up; grasp plug to disconnect, do not pull cord"
+    },
+    {
+      "order": 2,
+      "action": "Remove and empty the slide-out crumb tray regularly",
+      "what_to_look_for": "Crumb tray pulled out from bottom; crumbs emptied into trash",
+      "visual_confirmation": "Tray is empty or mostly clear of debris",
+      "overlay": {
+        "position": "bottom-center",
+        "type": "step",
+        "label": "Crumb tray"
+      },
+      "if_issue_found": "Failure to clean crumb tray may result in fire hazard (manufacturer warning)"
+    },
+    {
+      "order": 3,
+      "action": "To remove food lodged in slots: unplug, allow to cool, then turn toaster upside down and shake gently",
+      "what_to_look_for": "Loose crumbs or food pieces fall out; user is not using fork or metal while plugged in",
+      "visual_confirmation": "Slot area is clearer; no tools inserted into slots",
+      "overlay": {
+        "position": "top-center",
+        "type": "warning",
+        "label": "No fork in slots"
+      },
+      "if_issue_found": "Do not use fork or utensil that could damage heating element or cause fire/shock"
+    },
+    {
+      "order": 4,
+      "action": "Wipe exterior with a damp cloth; avoid getting water into slots, levers, or buttons",
+      "what_to_look_for": "External surfaces wiped; no drips entering slot openings",
+      "visual_confirmation": "Outside looks clean and dry to the touch",
+      "overlay": {
+        "position": "center",
+        "type": "info",
+        "label": "Keep water out of slots"
+      }
+    },
+    {
+      "order": 5,
+      "action": "Remove dust cover only after unplugging and full cool-down; never use dust cover during operation",
+      "what_to_look_for": "Dust cover stored away while toaster is running",
+      "visual_confirmation": "If cover was on, it is off before next use",
+      "overlay": {
+        "position": "top-center",
+        "type": "warning",
+        "label": "Remove cover when toasting"
+      },
+      "safety_note": "Manual: Fire hazard — remove dust cover during use"
+    }
+  ],
+  "sources": [
+    "Hamilton Beach Use and Care Guide 840231800 (PDF, team materials)",
+    "app/knowledge/sources/840231800.pdf"
+  ]
+}

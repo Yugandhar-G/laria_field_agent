@@ -1,0 +1,15 @@
+---
+description: Never invent APIs, types, or signatures not in the specs
+globs:
+alwaysApply: true
+---
+
+Do NOT invent function signatures, API contracts, types, component props, or data structures that are not specified in the skill files or CLAUDE.md.
+
+If something is ambiguous, stop and ask rather than guessing.
+
+If a type is defined in a skill file, use EXACTLY that type — do not add fields, remove fields, change names, or alter return types.
+
+If a function signature is specified, use EXACTLY that signature — do not add parameters, change parameter types, or rename anything.
+
+Never fabricate metrics, version numbers, package names, or API capabilities. If you don't know something, say so.

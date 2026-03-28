@@ -1,0 +1,122 @@
+{
+  "id": "toaster-wont-heat",
+  "equipment": {
+    "type": "toaster",
+    "models": ["generic 2-slice", "generic 4-slice"],
+    "identifiers": ["slotted top", "lever on side", "crumb tray on bottom", "chrome/steel body"]
+  },
+  "symptom": "Toaster won't heat up or toast bread",
+  "difficulty": "beginner",
+  "estimated_time_minutes": 15,
+  "tools_required": ["multimeter", "screwdriver (Phillips)"],
+  "safety": {
+    "preconditions": [
+      "Unplug the toaster from the wall outlet",
+      "Wait 5 minutes for any residual heat to dissipate",
+      "Work on a dry, non-conductive surface"
+    ],
+    "hazards": [
+      "Electric shock if plugged in during inspection",
+      "Sharp edges inside the toaster body",
+      "Nichrome heating elements are fragile when cold"
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "action": "Verify the toaster is unplugged from the wall outlet",
+      "what_to_look_for": "The power cord should be completely disconnected from the outlet",
+      "visual_confirmation": "Cord end is visible and not inserted into any outlet",
+      "overlay": {
+        "position": "bottom-right",
+        "type": "warning",
+        "label": "Unplug first!"
+      },
+      "safety_note": "Never work on a plugged-in toaster"
+    },
+    {
+      "order": 2,
+      "action": "Inspect the power cord for damage — look for fraying, burn marks, or bent prongs",
+      "what_to_look_for": "Run fingers along the cord checking for cuts, exposed wire, melted insulation, or discoloration",
+      "visual_confirmation": "Cord is intact with no visible damage, prongs are straight and clean",
+      "overlay": {
+        "position": "bottom-right",
+        "type": "highlight",
+        "label": "Check power cord"
+      },
+      "if_issue_found": "If cord is damaged, the toaster needs a replacement cord or should be replaced entirely. Do not attempt to repair a damaged cord."
+    },
+    {
+      "order": 3,
+      "action": "Remove and empty the crumb tray, then inspect the interior for debris",
+      "what_to_look_for": "Pull out the crumb tray from the bottom. Look for excessive crumb buildup that could be blocking the mechanism",
+      "visual_confirmation": "Crumb tray slides out freely, interior is relatively clear of debris",
+      "overlay": {
+        "position": "bottom-center",
+        "type": "step",
+        "label": "Remove crumb tray"
+      }
+    },
+    {
+      "order": 4,
+      "action": "Test the lever mechanism — push it down and check if it latches",
+      "what_to_look_for": "Press the lever down firmly. It should click and hold in the down position. If it springs back up immediately, the latch mechanism is the issue",
+      "visual_confirmation": "Lever stays down when pressed (if plugged in) OR springs back immediately (unplugged is normal — the electromagnet needs power)",
+      "overlay": {
+        "position": "center-left",
+        "type": "step",
+        "label": "Test lever"
+      },
+      "if_issue_found": "If lever won't stay down even when plugged in, the thermal fuse or electromagnet circuit is likely blown"
+    },
+    {
+      "order": 5,
+      "action": "If you have a multimeter, test continuity of the power cord from plug prongs to internal connections",
+      "what_to_look_for": "Set multimeter to continuity mode. Touch probes to each prong and corresponding internal wire terminal",
+      "visual_confirmation": "Multimeter shows continuity (beep or near-zero reading) on both conductors",
+      "overlay": {
+        "position": "center",
+        "type": "step",
+        "label": "Test cord continuity"
+      },
+      "if_issue_found": "No continuity means a break in the cord — replace the toaster"
+    },
+    {
+      "order": 6,
+      "action": "Visually inspect the heating elements through the bread slots",
+      "what_to_look_for": "Look down into the bread slots. The nichrome wire elements should be continuous with no visible breaks or dark spots",
+      "visual_confirmation": "Elements appear as continuous wire running back and forth without gaps",
+      "overlay": {
+        "position": "top-center",
+        "type": "highlight",
+        "label": "Check heating elements"
+      },
+      "if_issue_found": "Visible break in element wire = element needs replacement. On most consumer toasters this means replacing the unit"
+    },
+    {
+      "order": 7,
+      "action": "Locate and test the thermal fuse (usually near the bottom of the heating element assembly)",
+      "what_to_look_for": "Small cylindrical or rectangular component with two wires. Test continuity with multimeter",
+      "visual_confirmation": "Thermal fuse shows continuity. If open (no continuity), this is the likely cause",
+      "overlay": {
+        "position": "center",
+        "type": "highlight",
+        "label": "Thermal fuse"
+      },
+      "if_issue_found": "Blown thermal fuse is the #1 cause of a toaster that won't heat. It's a one-shot device that must be replaced with the exact same rating"
+    },
+    {
+      "order": 8,
+      "action": "Plug in the toaster and test with a slice of bread",
+      "what_to_look_for": "Insert bread, press lever down, set to medium darkness. Elements should glow orange within 10 seconds",
+      "visual_confirmation": "Elements glow evenly, bread toasts normally, lever pops up when done",
+      "overlay": {
+        "position": "center",
+        "type": "info",
+        "label": "Test operation"
+      },
+      "safety_note": "Stand by the toaster during this test. If you smell burning or see sparks, unplug immediately"
+    }
+  ],
+  "sources": ["general-toaster-repair-guide", "manufacturer-common-failures"]
+}

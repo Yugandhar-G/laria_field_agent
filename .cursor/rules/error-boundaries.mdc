@@ -1,0 +1,16 @@
+---
+description: Comprehensive error handling for every async and IO operation
+globs: "**/*.{ts,tsx}"
+alwaysApply: false
+---
+
+Error handling is non-negotiable:
+
+- Every async operation needs try/catch with a meaningful error message
+- Every WebSocket event needs an error handler
+- Camera permission denied: show user-friendly message explaining why camera is needed
+- Mic permission denied: show message, continue without audio (camera still works)
+- Network failures: show "Reconnecting..." state, not a blank screen or crash
+- JSON parse errors on incoming WebSocket messages: log and skip, don't crash the session
+- Never swallow exceptions silently. Log server-side, show user-friendly surface messages.
+- Use a logger utility, not console.log in production code

@@ -1,0 +1,95 @@
+{
+  "id": "toaster-uneven-toasting",
+  "equipment": {
+    "type": "toaster",
+    "models": ["generic 2-slice", "generic 4-slice"],
+    "identifiers": ["slotted top", "lever on side", "crumb tray on bottom"]
+  },
+  "symptom": "Toaster toasts unevenly — one side dark, one side light",
+  "difficulty": "beginner",
+  "estimated_time_minutes": 10,
+  "tools_required": ["screwdriver (Phillips)"],
+  "safety": {
+    "preconditions": [
+      "Unplug the toaster from the wall outlet",
+      "Allow to cool completely if recently used"
+    ],
+    "hazards": [
+      "Electric shock if plugged in",
+      "Sharp metal edges inside"
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "action": "Unplug the toaster and let it cool completely",
+      "what_to_look_for": "Cord disconnected from outlet, toaster cool to touch",
+      "visual_confirmation": "Cord is free, no heat radiating from slots",
+      "overlay": {
+        "position": "bottom-right",
+        "type": "warning",
+        "label": "Unplug & cool down"
+      }
+    },
+    {
+      "order": 2,
+      "action": "Look into both bread slots and compare the heating elements on each side",
+      "what_to_look_for": "One side may have a broken or discolored element while the other looks normal",
+      "visual_confirmation": "Both sides have intact, similar-looking nichrome wire elements",
+      "overlay": {
+        "position": "top-center",
+        "type": "highlight",
+        "label": "Compare both sides"
+      },
+      "if_issue_found": "If one side's element is broken or darkened, that element has failed. Most consumer toasters require full replacement"
+    },
+    {
+      "order": 3,
+      "action": "Remove the crumb tray and clean out all debris",
+      "what_to_look_for": "Heavy crumb accumulation on one side could insulate the element and cause uneven heating",
+      "visual_confirmation": "Crumb tray empty, interior cleared of debris on both sides equally",
+      "overlay": {
+        "position": "bottom-center",
+        "type": "step",
+        "label": "Clean crumb tray"
+      }
+    },
+    {
+      "order": 4,
+      "action": "Check the bread guides (the metal cage that holds the bread) for alignment",
+      "what_to_look_for": "The bread should sit centered between the two sets of elements. If the guide is bent, bread sits closer to one side",
+      "visual_confirmation": "Bread guide is centered and moves smoothly up and down",
+      "overlay": {
+        "position": "center",
+        "type": "step",
+        "label": "Check bread guide"
+      },
+      "if_issue_found": "Gently bend the guide back to center with your fingers. Be careful — the metal is thin"
+    },
+    {
+      "order": 5,
+      "action": "Check the reflector panels (shiny metal behind the elements) for damage or tarnish",
+      "what_to_look_for": "Reflectors redirect heat toward the bread. If one side is tarnished, bent, or missing, that side will toast less",
+      "visual_confirmation": "Both reflector panels are clean, shiny, and properly positioned",
+      "overlay": {
+        "position": "center",
+        "type": "highlight",
+        "label": "Check reflectors"
+      },
+      "if_issue_found": "Gently clean tarnished reflectors with a damp cloth. If bent, carefully straighten"
+    },
+    {
+      "order": 6,
+      "action": "Test with bread — observe if toasting is now even",
+      "what_to_look_for": "Toast a slice and check both sides for even browning",
+      "visual_confirmation": "Both sides of the bread are evenly toasted at medium setting",
+      "overlay": {
+        "position": "center",
+        "type": "info",
+        "label": "Test result"
+      },
+      "safety_note": "Stay with the toaster during testing"
+    }
+  ],
+  "sources": ["general-toaster-repair-guide"]
+}

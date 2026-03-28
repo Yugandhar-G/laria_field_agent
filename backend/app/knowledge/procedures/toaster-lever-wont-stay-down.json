@@ -1,0 +1,95 @@
+{
+  "id": "toaster-lever-wont-stay-down",
+  "equipment": {
+    "type": "toaster",
+    "models": ["generic 2-slice", "generic 4-slice"],
+    "identifiers": ["slotted top", "lever on side", "crumb tray on bottom"]
+  },
+  "symptom": "Toaster lever won't stay down or pops back up immediately",
+  "difficulty": "beginner",
+  "estimated_time_minutes": 15,
+  "tools_required": ["screwdriver (Phillips)", "multimeter"],
+  "safety": {
+    "preconditions": [
+      "Unplug the toaster",
+      "Let it cool if recently used"
+    ],
+    "hazards": [
+      "Electric shock risk if plugged in",
+      "Spring-loaded parts can snap"
+    ]
+  },
+  "steps": [
+    {
+      "order": 1,
+      "action": "Verify the toaster is unplugged",
+      "what_to_look_for": "Power cord disconnected from wall outlet",
+      "visual_confirmation": "Cord is free and visible",
+      "overlay": {
+        "position": "bottom-right",
+        "type": "warning",
+        "label": "Unplug first"
+      }
+    },
+    {
+      "order": 2,
+      "action": "Plug the toaster back in and try the lever again — note: the lever needs power to latch",
+      "what_to_look_for": "The electromagnet inside needs current to hold the lever down. If it still won't stay, the circuit is broken",
+      "visual_confirmation": "Lever either latches (working) or immediately pops back (circuit broken)",
+      "overlay": {
+        "position": "center-left",
+        "type": "step",
+        "label": "Test with power"
+      },
+      "safety_note": "Only plug in for this test, then unplug immediately after"
+    },
+    {
+      "order": 3,
+      "action": "Remove crumb tray and shake out all debris — crumbs can jam the mechanism",
+      "what_to_look_for": "Excessive crumbs caught in the lever mechanism or around the bread carriage",
+      "visual_confirmation": "Mechanism area is clear, lever moves freely up and down",
+      "overlay": {
+        "position": "bottom-center",
+        "type": "step",
+        "label": "Clean mechanism"
+      }
+    },
+    {
+      "order": 4,
+      "action": "If the lever still won't latch with power, test the thermal fuse for continuity",
+      "what_to_look_for": "The thermal fuse is in series with the electromagnet. If blown, no current flows and the magnet can't hold",
+      "visual_confirmation": "Multimeter shows continuity through the thermal fuse",
+      "overlay": {
+        "position": "center",
+        "type": "highlight",
+        "label": "Test thermal fuse"
+      },
+      "if_issue_found": "Blown thermal fuse = most common cause. Replace with exact same rated fuse. This is a safety device — never bypass it"
+    },
+    {
+      "order": 5,
+      "action": "Check the latch mechanism for broken or bent parts",
+      "what_to_look_for": "The metal latch tab that hooks onto the electromagnet may be bent or broken. The spring that returns the lever should be intact",
+      "visual_confirmation": "Latch tab is straight and engages properly, spring has tension",
+      "overlay": {
+        "position": "center-left",
+        "type": "step",
+        "label": "Inspect latch"
+      },
+      "if_issue_found": "Bent latch can sometimes be carefully bent back. Broken latch = replace the toaster"
+    },
+    {
+      "order": 6,
+      "action": "After fixing, plug in and test the lever",
+      "what_to_look_for": "Lever should push down, click, and hold. Elements should begin to glow",
+      "visual_confirmation": "Lever latches, elements heat up, lever releases when done",
+      "overlay": {
+        "position": "center",
+        "type": "info",
+        "label": "Final test"
+      },
+      "safety_note": "Watch the first full cycle to confirm proper operation"
+    }
+  ],
+  "sources": ["general-toaster-repair-guide", "common-toaster-failures"]
+}

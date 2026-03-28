@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Build output
+frontend/dist/
+*.pyc
+__pycache__/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+frontend/.env
+backend/.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursor/mcp.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# Vector store (regenerated from procedures/*.json)
+backend/app/knowledge/chroma_db/
+
+# TypeScript incremental cache
+frontend/tsconfig.tsbuildinfo
+
+# Vite
+*.local
+
+# Logs
+*.log

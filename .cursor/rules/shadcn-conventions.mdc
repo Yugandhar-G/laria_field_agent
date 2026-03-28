@@ -1,0 +1,17 @@
+---
+description: shadcn/ui component conventions
+globs: "frontend/src/components/**/*.tsx"
+alwaysApply: false
+---
+
+UI components follow shadcn/ui conventions:
+
+- Components in `src/components/ui/` for primitives (button, card, badge, etc.)
+- Application components in `src/components/screens/` and `src/components/overlays/`
+- Kebab-case filenames: `diagnosis-card.tsx`, `status-bar.tsx`
+- Use `cn()` utility from `@/lib/utils` for class name merging
+- Radix primitives for accessible interactive components
+- Import pattern: `import { Button } from "@/components/ui/button"`
+- Dark mode via class strategy on `<html class="dark">`
+- CSS variables for theming (defined in `src/index.css`)
+- No inline styles when Tailwind classes exist for the property

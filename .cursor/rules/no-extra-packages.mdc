@@ -1,0 +1,32 @@
+---
+description: Strict allowlist of permitted packages
+globs:
+alwaysApply: true
+---
+
+Do NOT install packages not on this list without explicit approval.
+
+Frontend (allowed):
+- react, react-dom
+- vite, @vitejs/plugin-react
+- typescript
+- tailwindcss, postcss, autoprefixer
+- @radix-ui/* (any Radix primitive)
+- class-variance-authority, clsx, tailwind-merge
+- lucide-react
+
+Backend (allowed):
+- fastapi, uvicorn
+- pydantic, pydantic-settings
+- PyMuPDF (fitz)
+- httpx
+- pytest, pytest-asyncio
+
+Do NOT add:
+- State management (Redux, Zustand, Jotai)
+- Routing (React Router)
+- CSS-in-JS libraries
+- WebSocket libraries (socket.io, ws)
+- Gemini SDK on backend
+- Database ORMs (SQLAlchemy)
+- Authentication libraries

@@ -1,0 +1,11 @@
+---
+description: Enforce maximum file size of 300 lines
+globs: "**/*.{ts,tsx,py,js,jsx}"
+alwaysApply: false
+---
+
+Maximum 300 lines per file. If a file exceeds this, split it into focused modules.
+
+- Components, hooks, services, and utils should each be their own file.
+- Functions maximum 50 lines. Extract helpers if longer.
+- Prefer many small files over few large ones — makes parallel editing viable and reduces merge conflicts.

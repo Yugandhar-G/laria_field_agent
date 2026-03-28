@@ -1,0 +1,18 @@
+---
+description: All AI interaction through Gemini Live API WebSocket only
+globs:
+alwaysApply: true
+---
+
+ALL AI interaction (equipment identification, diagnosis, conversational guidance) goes through the Gemini Live API WebSocket.
+
+Do NOT:
+- Create REST API endpoints that call Gemini
+- Use the Gemini generateContent REST API
+- Add `google-genai` or any Gemini SDK to the backend
+- Add WebSocket endpoints to the backend
+
+The backend is ONLY for:
+- Knowledge base retrieval (POST /api/knowledge)
+- Session logging (POST /api/sessions)
+- Health check (GET /health)
