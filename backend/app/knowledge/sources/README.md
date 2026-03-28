@@ -1,4 +1,4 @@
-# Training source materials (Nithin)
+# Training source materials 
 
 Copied or documented for reproducibility.
 
